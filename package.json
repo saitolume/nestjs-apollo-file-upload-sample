@@ -1,0 +1,15 @@
+{
+  "name": "nestjs-apollo-file-upload-sample",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Tadao Iseki <saitoeku3@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saitoeku3/nestjs-apollo-file-upload-sample.git"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "src/*"
+  ]
+}

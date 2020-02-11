@@ -1,0 +1,62 @@
+{
+  "name": "client",
+  "description": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Tadao Iseki <saitoeku3@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saitoeku3/nestjs-apollo-file-upload-sample.git",
+    "directory": "src/client"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"yarn typegen --watch\" \"react-scripts start\"",
+    "typegen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "apollo": "^2.22.0",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-upload-client": "^12.1.0",
+    "apollo-utilities": "^1.3.3",
+    "core-js": "3",
+    "graphql": "^14.6.0",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-is": "^16.12.0",
+    "react-scripts": "3.3.1",
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.12.2",
+    "@graphql-codegen/introspection": "^1.12.2",
+    "@graphql-codegen/typescript": "^1.12.2",
+    "@graphql-codegen/typescript-operations": "^1.12.2",
+    "@graphql-codegen/typescript-react-apollo": "^1.12.2",
+    "@types/apollo-upload-client": "^8.1.3",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@types/styled-components": "^4.4.2",
+    "concurrently": "^5.1.0",
+    "typescript": "^3.7.5"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
