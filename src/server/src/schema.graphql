@@ -3,14 +3,17 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+input AddPhotoInput {
+  name: String!
+}
+
 type Mutation {
-  addPhoto(file: Upload!): Boolean!
+  addPhoto(input: AddPhotoInput!, file: Upload!): Photo!
 }
 
 type Photo {
   id: ID!
   name: String!
-  description: String!
   url: String!
 }
 

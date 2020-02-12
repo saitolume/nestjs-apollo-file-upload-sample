@@ -9,8 +9,5 @@ export class Photo {
   name: string
 
   @Field()
-  description: string
-
-  @Field()
   url: string
 }

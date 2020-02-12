@@ -4,7 +4,7 @@ documents:
   - 'src/**/*.ts'
   - 'src/**/*.tsx'
 generates:
-  src/graphql/types/index.ts:
+  src/graphql/types.ts:
     plugins:
       - 'typescript'
       - 'typescript-operations'
@@ -12,4 +12,4 @@ generates:
     config:
       withHOC: false
       withComponent: false
-      withHooks: true
+      withHooks: false
