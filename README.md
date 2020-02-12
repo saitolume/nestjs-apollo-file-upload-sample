@@ -2,7 +2,7 @@
 
 > Sample repository that implements file upload with NestJS and Apollo
 
-![](https://i.gyazo.com/7b497f434dbd38a8c307c91e1cfee4b3.png)
+![](./demo.gif)
 
 ## Running app
 

@@ -43,7 +43,7 @@ const Index: React.FC = () => {
       <Form onSubmit={uploadPhoto}>
         <FlexBox>
           <ImageField src={src} onClick={selectImage} tabIndex={0}>
-            {!src && <ImageFieldLabel>画像を選択</ImageFieldLabel>}
+            {!src && <ImageFieldLabel>Select your image</ImageFieldLabel>}
           </ImageField>
           <RightColumn>
             <TextField
