@@ -35,6 +35,7 @@ const Index: React.FC = () => {
     await addPhoto({ file, name })
     setName('')
     setSrc('')
+    setFile(undefined)
   }
 
   return (
@@ -63,8 +64,8 @@ const Index: React.FC = () => {
         </FlexBox>
       </Form>
       <PhotoList>
-        {photos.map(photo => (
-          <PhotoCard key={photo.id} photo={photo} />
+        {photos.map((photo, index) => (
+          <PhotoCard key={index} photo={photo} />
         ))}
       </PhotoList>
     </Container>

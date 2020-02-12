@@ -1,4 +1,5 @@
 import { Injectable } from '@nestjs/common'
+import uuid from 'uuid/v4'
 import { Photo } from './photo'
 
 @Injectable()
@@ -10,7 +11,7 @@ export class PhotoService {
   }
 
   async create(attributes: Omit<Photo, 'id'>): Promise<Photo> {
-    const photo = { id: '', ...attributes }
+    const photo = { id: uuid(), ...attributes }
     this.photos = [...this.photos, photo]
     return photo
   }
